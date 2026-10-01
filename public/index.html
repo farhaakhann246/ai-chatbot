@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>AI Chatbot</title>
+
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+
+  <div class="app">
+
+    <header class="chat-header">
+      <div>
+        <h1>AI Chatbot</h1>
+        <p>Powered by Node.js & AI</p>
+      </div>
+
+      <button id="clearButton">
+        Clear
+      </button>
+    </header>
+
+
+    <main
+      id="chatMessages"
+      class="chat-messages"
+    >
+
+      <div class="message assistant-message">
+        <div class="message-label">
+          AI
+        </div>
+
+        <div class="message-content">
+          Hello! How can I help you today?
+        </div>
+      </div>
+
+    </main>
+
+
+    <form
+      id="chatForm"
+      class="chat-input-area"
+    >
+
+      <input
+        id="messageInput"
+        type="text"
+        placeholder="Ask me anything..."
+        autocomplete="off"
+      />
+
+      <button
+        id="sendButton"
+        type="submit"
+      >
+        Send
+      </button>
+
+    </form>
+
+  </div>
+
+
+  <script src="/app.js"></script>
+
+</body>
+</html>
